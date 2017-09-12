@@ -19,6 +19,7 @@
 #import "DrawlineViewController.h"
 #import "AliPayAnimationViewController.h"
 #import "LottieViewController.h"
+#import "WeiboViewController.h"
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *rootTableView;
@@ -46,7 +47,7 @@
 - (NSArray *)dateSourceArr{
     if (!_dateSourceArr) {
         _dateSourceArr = [NSArray array];
-        _dateSourceArr = @[@"CAShapeLayer",@"贝塞尔曲线",@"基础动画",@"关键帧动画",@"组动动画",@"转场动画",@"波浪",@"Gif",@"咸鱼",@"画线",@"支付宝动画",@"Lottie动画"];
+        _dateSourceArr = @[@"CAShapeLayer",@"贝塞尔曲线",@"基础动画",@"关键帧动画",@"组动动画",@"转场动画",@"波浪",@"Gif",@"咸鱼",@"画线",@"支付宝动画",@"Lottie动画",@"微博"];
     }
     return _dateSourceArr;
 }
@@ -119,6 +120,9 @@
             break;
         case 11:
             viewController = [[LottieViewController alloc] init];
+            break;
+        case 12:
+            viewController = [[WeiboViewController alloc] init];
             break;
 
 

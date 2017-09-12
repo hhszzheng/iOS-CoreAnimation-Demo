@@ -8,4 +8,8 @@ target 'iOS-CoreAnimation Demo' do
   # Pods for iOS-CoreAnimation Demo
 
 pod 'lottie-ios'
+pod 'pop'
+pod 'Masonry'
+
+
 end

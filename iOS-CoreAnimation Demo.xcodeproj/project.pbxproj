@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E001E891F67728400648088 /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E001E881F67728400648088 /* WeiboViewController.m */; };
+		0E001E8C1F67774700648088 /* SendWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E001E8B1F67774700648088 /* SendWeiboViewController.m */; };
+		0E001E8F1F677DA500648088 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E001E8E1F677DA500648088 /* UIView+Extension.m */; };
 		0E0187F81EB8206000EFFC63 /* DrawlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0187F71EB8206000EFFC63 /* DrawlineViewController.m */; };
 		0E0187FB1EB821A200EFFC63 /* DrawlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0187FA1EB821A200EFFC63 /* DrawlineView.m */; };
 		0E0187FE1EB834B500EFFC63 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0187FD1EB834B500EFFC63 /* TriangleView.m */; };
@@ -102,6 +105,12 @@
 
 /* Begin PBXFileReference section */
 		013BA2F099BEB0BED89812BE /* Pods-iOS-CoreAnimation Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CoreAnimation Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-CoreAnimation Demo/Pods-iOS-CoreAnimation Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		0E001E871F67728400648088 /* WeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
+		0E001E881F67728400648088 /* WeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
+		0E001E8A1F67774700648088 /* SendWeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendWeiboViewController.h; sourceTree = "<group>"; };
+		0E001E8B1F67774700648088 /* SendWeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendWeiboViewController.m; sourceTree = "<group>"; };
+		0E001E8D1F677DA500648088 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		0E001E8E1F677DA500648088 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		0E0187F61EB8206000EFFC63 /* DrawlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawlineViewController.h; sourceTree = "<group>"; };
 		0E0187F71EB8206000EFFC63 /* DrawlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawlineViewController.m; sourceTree = "<group>"; };
 		0E0187F91EB821A200EFFC63 /* DrawlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawlineView.h; sourceTree = "<group>"; };
@@ -247,6 +256,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E001E861F67724E00648088 /* 微博百思 */ = {
+			isa = PBXGroup;
+			children = (
+				0E001E871F67728400648088 /* WeiboViewController.h */,
+				0E001E881F67728400648088 /* WeiboViewController.m */,
+				0E001E8A1F67774700648088 /* SendWeiboViewController.h */,
+				0E001E8B1F67774700648088 /* SendWeiboViewController.m */,
+			);
+			name = "微博百思";
+			sourceTree = "<group>";
+		};
 		0E0187F51EB8202500EFFC63 /* 画线动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +479,8 @@
 				0EEEB5801EB195CD00420C6D /* RootViewController.h */,
 				0EEEB5811EB195CD00420C6D /* RootViewController.m */,
 				0EEEB59A1EB1DBFD00420C6D /* PrefixHeader.pch */,
+				0E001E8D1F677DA500648088 /* UIView+Extension.h */,
+				0E001E8E1F677DA500648088 /* UIView+Extension.m */,
 				0EEEB59E1EB1DD4A00420C6D /* Base */,
 				0EE3940B1EC008AE0001F1D4 /* lottie动画 */,
 				0EE003261EBACC1B007DA55D /* 仿支付宝支付动画 */,
@@ -472,8 +494,9 @@
 				0E44F0FC1EB32CC7008BA1E7 /* Gif */,
 				0E44F1081EB34463008BA1E7 /* 咸鱼效果 */,
 				0E0187F51EB8202500EFFC63 /* 画线动画 */,
-				0EEEB5751EB1958300420C6D /* Assets.xcassets */,
+				0E001E861F67724E00648088 /* 微博百思 */,
 				0EEEB5771EB1958300420C6D /* LaunchScreen.storyboard */,
+				0EEEB5751EB1958300420C6D /* Assets.xcassets */,
 				0EEEB57A1EB1958300420C6D /* Info.plist */,
 				0EEEB5691EB1958300420C6D /* Supporting Files */,
 			);
@@ -759,8 +782,10 @@
 				0E44F0FF1EB32CDA008BA1E7 /* GifViewController.m in Sources */,
 				0E44F10E1EB3447F008BA1E7 /* pushButton.m in Sources */,
 				0E44F0F41EB2DB31008BA1E7 /* CircleView.m in Sources */,
+				0E001E8C1F67774700648088 /* SendWeiboViewController.m in Sources */,
 				0EEEB5881EB199E400420C6D /* RootNavigationViewController.m in Sources */,
 				0EE394731EC017350001F1D4 /* JSONExplorerViewController.m in Sources */,
+				0E001E891F67728400648088 /* WeiboViewController.m in Sources */,
 				0E44F1071EB3445D008BA1E7 /* XianYuViewController.m in Sources */,
 				0EE3947E1EC052F60001F1D4 /* RefreshViewController.m in Sources */,
 				0EE0032F1EBACD3C007DA55D /* XLPaymentLoadingHUD.m in Sources */,
@@ -770,6 +795,7 @@
 				0E44F10D1EB3447F008BA1E7 /* pushView.m in Sources */,
 				0EEEB56E1EB1958300420C6D /* AppDelegate.m in Sources */,
 				0EEEB56B1EB1958300420C6D /* main.m in Sources */,
+				0E001E8F1F677DA500648088 /* UIView+Extension.m in Sources */,
 				0EE003291EBACC54007DA55D /* AliPayAnimationViewController.m in Sources */,
 				0E0187F81EB8206000EFFC63 /* DrawlineViewController.m in Sources */,
 				0E0187FB1EB821A200EFFC63 /* DrawlineView.m in Sources */,
